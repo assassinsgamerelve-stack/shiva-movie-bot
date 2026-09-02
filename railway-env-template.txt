@@ -1,0 +1,78 @@
+# ============================================
+# RAILWAY ENVIRONMENT VARIABLES TEMPLATE
+# Copy and update all values below
+# Paste them into Railway Dashboard → Variables
+# ============================================
+
+# TELEGRAM CREDENTIALS (REQUIRED)
+API_ID=
+API_HASH=
+BOT_TOKEN=
+
+# DATABASE (REQUIRED)
+DATABASE_URI=
+DATABASE_URI2=
+DATABASE_NAME=cluster_0
+COLLECTION_NAME=mtqlfehk
+
+# ADMINS & CHANNELS (REQUIRED - space separated)
+ADMINS=
+CHANNELS=
+SUPPORT_GROUP=
+LOG_CHANNEL=
+AUTH_CHANNEL=
+DELETE_CHANNELS=
+MOVIE_UPDATE=
+LOG_VR_CHANNEL=
+LOG_API_CHANNEL=
+MOVIE_UPDATE_CHANNEL=
+PREMIUM_LOGS=
+REQ_CHANNEL=
+BIN_CHANNEL=
+
+# API KEYS (Optional but recommended)
+SHORTENER_API=
+SHORTENER_API2=
+SHORTENER_WEBSITE=aroLinks.com
+SHORTENER_WEBSITE2=arolinks.com
+STREAM_API=
+STREAM_SITE=gplinks.com
+
+# CONFIGURATION
+PORT=8004
+FILE_AUTO_DEL_TIMER=600
+DELETE_TIME=300
+TWO_VERIFY_GAP=43200
+REFERAL_COUNT=15
+REFERAL_PREMEIUM_TIME=7day
+MAX_BTN=8
+SKIP=2
+
+# CUSTOM LINKS & MEDIA
+USERNAME=https://t.me/DG_shiva
+MOVIE_GROUP_LINK=https://t.me/movies_group8
+GRP_LNK=https://t.me/movies_group8
+TUTORIAL=t.me/moviehiap/9
+TUTORIAL_2=https://t.me/moviehiap/9
+STREAMHTO=https://t.me/
+URL=http://dragon-stream.codeltix.com
+
+# IMAGES & MEDIA (Optional)
+START_IMG=https://envs.sh/bNy.jpg
+MONEY_IMG=https://graph.org/file/f53094fbcccead10fb6e7.jpg
+VERIFY_IMG=https://graph.org/file/1669ab9af68eaa62c3ca4.jpg
+WELCOME_VID=https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4
+QR_CODE=https://i.ibb.co/Swrgp0ts/file-426.jpg.jpg
+QR=https://i.ibb.co/Swrgp0ts/file-426.jpg.jpg
+REFER_PICS=https://graph.org/file/1a2e64aee3d4d10edd930.jpg
+
+# ============================================
+# HOW TO USE:
+# 1. Fill in all REQUIRED fields marked above
+# 2. Get API_ID & API_HASH from my.telegram.org
+# 3. Get BOT_TOKEN from @BotFather
+# 4. Create MongoDB cluster at mongodb.com
+# 5. Find your Channel IDs (right-click channel → Copy Link)
+# 6. Find your Admin IDs (forward message from user → /id bot)
+# 7. Copy these variables into Railway Dashboard
+# ============================================

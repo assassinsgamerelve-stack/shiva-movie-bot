@@ -1,0 +1,75 @@
+# ============================================
+# AKSHIVA BOT - RAILWAY OPTIMIZED REQUIREMENTS
+# ============================================
+# This is an optimized version for Railway deployment
+# Use this instead of requirements.txt for better compatibility
+
+# TELEGRAM CLIENT & CRYPTOGRAPHY
+pyrofork==2.3.45
+tgcrypto>=1.0.7
+
+# DATABASE - MONGODB (ASYNC)
+pymongo==4.8.0
+motor==3.5.1
+dnspython==2.3.0
+
+# WEB FRAMEWORK & SERVER
+Flask==1.1.2
+gunicorn==20.1.0
+aiohttp>=3.8.0
+Jinja2==3.0.3
+werkzeug==2.0.2
+itsdangerous==2.0.1
+
+# ASYNC & CONCURRENT OPERATIONS
+aiofiles>=23.0.0
+
+# MEDIA PROCESSING
+ffmpeg-python>=0.2.1
+Pillow>=9.0.0
+
+# DATA HANDLING & SERIALIZATION
+marshmallow==3.22.0
+ujson>=5.0.0
+requests>=2.28.0
+
+# IMDB & MOVIE DATA
+Cinemagoer>=2022.2.9
+imdb>=2022.07.09
+
+# TEXT PROCESSING & TRANSLATION
+googletrans==4.0.0rc1
+edge-tts>=6.0.0
+
+# URL SHORTENING & LINKS
+pyshorteners>=1.0.1
+shortzy>=1.2
+
+# TIME & TIMEZONE
+pytz>=2023.3
+
+# STRING MATCHING
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.12.0
+
+# UTILITIES
+wget>=3.2
+python-math>=0.2.0
+speedtest-cli>=2.1.3
+psutil>=5.9.0
+
+# SEARCH ENGINE
+search-engine-parser>=0.0.8
+
+# LEGACY SUPPORT
+legacy-cgi>=2.6.0
+
+# BUILD UTILITIES
+wheel>=0.37.0
+setuptools>=65.0.0
+
+# HEROKU INTEGRATION (if needed)
+Heroku3>=5.1.4
+
+# Async MongoDB ORM
+umongo==3.1.0

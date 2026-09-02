@@ -1,0 +1,74 @@
+# Railway TOML Configuration for Akshiva Bot
+
+[build]
+builder = "dockerfile"
+# Uncomment below to use heroku buildpacks instead:
+# builder = "heroku.buildpacks"
+
+[deploy]
+# Start command for the bot
+startCommand = "python3 bot.py"
+
+# Restart policy for crashes
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 5
+
+# Health check configuration
+healthchecks = {
+    enabled = true,
+    interval = 30,
+    timeout = 10,
+    startPeriod = 5,
+    retries = 3
+}
+
+# Port configuration
+port = 8004
+
+# Memory and CPU (these are soft limits, adjust based on your plan)
+# For Railway, the bot will use available resources
+memory = "512M"  # Recommended for movie bot with premium features
+cpu = "500m"     # Recommended for concurrent workers
+
+# Environment variable hints (actual values must be set in Railway dashboard)
+[env]
+# Telegram API
+API_ID = { description = "Your Telegram App ID", required = true }
+API_HASH = { description = "Your Telegram App Hash", required = true }
+BOT_TOKEN = { description = "Your Telegram Bot Token", required = true }
+
+# Database
+DATABASE_URI = { description = "MongoDB Connection String (Primary)", required = true }
+DATABASE_URI2 = { description = "MongoDB Connection String (Secondary)", required = false }
+DATABASE_NAME = { description = "Database Name (default: cluster_0)", default = "cluster_0" }
+COLLECTION_NAME = { description = "Collection Name (default: mtqlfehk)", default = "mtqlfehk" }
+
+# Admins and Channels
+ADMINS = { description = "Space-separated admin user IDs", required = true }
+CHANNELS = { description = "Space-separated channel IDs for search", required = true }
+SUPPORT_GROUP = { description = "Support group chat ID", required = true }
+LOG_CHANNEL = { description = "Log channel ID", required = true }
+AUTH_CHANNEL = { description = "Authentication channel ID", required = false }
+DELETE_CHANNELS = { description = "Channels for auto-delete", required = false }
+
+# API Keys and Services
+SHORTENER_API = { description = "URL Shortener API Key", required = false }
+SHORTENER_WEBSITE = { description = "URL Shortener Website (aroLinks.com)", default = "aroLinks.com" }
+STREAM_API = { description = "Streaming service API key", required = false }
+
+# Ports and Timeouts
+PORT = { description = "Web server port", default = "8004" }
+FILE_AUTO_DEL_TIMER = { description = "File auto-delete timer in seconds", default = "600" }
+DELETE_TIME = { description = "Message delete timeout in seconds", default = "300" }
+
+# Features
+REFERAL_COUNT = { description = "Number of referrals for premium", default = "15" }
+SKIP = { description = "Skip value for pagination", default = "2" }
+MAX_BTN = { description = "Maximum buttons per message", default = "8" }
+
+# UI Customization
+START_IMG = { description = "Bot start image URL", required = false }
+QR_CODE = { description = "QR code image URL", required = false }
+USERNAME = { description = "Bot owner username URL", required = false }
+MOVIE_GROUP_LINK = { description = "Movie group/channel link", required = false }
+TUTORIAL = { description = "Tutorial link", required = false }
