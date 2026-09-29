@@ -44,7 +44,7 @@ REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1002122516919'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002554117358'))
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://shivamcharan7773:Elve123@cluster0.fkjfi.mongodb.net/?appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://shivamcharan7773:Elve123@cluster0.fkjfi.mongodb.net/?appName=Cluster0 ")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://shivamcharan7773:Elve123@cluster0.fkjfi.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster_0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mtqlfehk')
 
