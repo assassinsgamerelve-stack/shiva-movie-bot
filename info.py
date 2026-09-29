@@ -18,7 +18,7 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '20725471'))
 API_HASH = environ.get('API_HASH', '7d32846e37e769270e94b6085b61bebf')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6719328690:AAFICfhchq7PjG8HRj8QIBK6NdeZtFo6AaY')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6719328690:AAF0-psUlT4RSyONlKN2FGpXyrwpxSYrcA4')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6093349648').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001952883830 -1001931435328 -1002032241046 -1002500062682 -1001863061409 -1001627590692').split()]
@@ -43,8 +43,8 @@ SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002400409881'))
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1002122516919')) 
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002554117358'))
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://shivamcharan777:Shiva7@cluster0.6qauv.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://shivamcharan7773:Shiva7@cluster0.bgoan.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://shivamcharan777:Shiva8769@cluster0.6qauv.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://shivamcharan7773:Shiva8769@cluster0.bgoan.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster_0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mtqlfehk')
 
